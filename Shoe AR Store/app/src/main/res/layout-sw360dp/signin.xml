@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg3"
+        android:scaleType="centerCrop"
+        />
+
+</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/fbl"
+        android:layout_marginBottom="100dp"
+
+        >
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/logoheader"
+            android:textColor="@color/Tex"
+            android:layout_gravity="center"
+            /></LinearLayout>
+<LinearLayout
+    android:id="@+id/fbl"
+    android:layout_above="@+id/or"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="60dp"
+    android:background="@drawable/rectfb"
+    android:padding="12dp"
+    android:gravity="center"
+    android:layout_marginBottom="8dp"
+    android:elevation="1.5dp"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fb"
+        android:layout_marginRight="5dp"
+        />
+    <customfonts.MyTextView
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in with Facebook"
+        android:textSize="@dimen/text"
+        android:textColor="@color/White"
+        android:layout_marginLeft="5dp"
+        />
+</LinearLayout>
+
+
+    <customfonts.MyTextView
+        android:id="@+id/or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="veya"
+        android:layout_above="@+id/linear"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/textSub"
+
+
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/signin1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorhint"
+                android:textColor="@color/colortext">
+
+                <customfonts.MyEditText
+                    android:id="@+id/email"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginRight="46dp"
+                    android:textColorHint="@color/textSub"
+                    android:textColor="@color/Tex"
+                    android:background="#0000"
+                    android:padding="14dp"
+                    android:gravity="left"
+                    android:lines="1"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="12dp"
+                    android:inputType="textEmailAddress"
+
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="56dp"
+                android:layout_height="1dp"
+                android:background="@color/red"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorhint"
+                android:textColor="@color/colortext">
+
+
+
+                <customfonts.MyEditText
+                    android:id="@+id/password"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Şifre"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginRight="46dp"
+                    android:textColorHint="@color/textSub"
+                    android:textColor="@color/Tex"
+                    android:background="#0000"
+                    android:padding="14dp"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/pass"
+                    android:drawablePadding="16dp"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="56dp"
+                android:layout_height="1dp"
+                android:background="@color/red"/>
+
+            <LinearLayout
+
+                android:layout_marginTop="12dp"
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+
+                >
+               <LinearLayout
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:layout_marginLeft="50dp"
+                   >
+                   <CheckBox
+                       android:id="@+id/checkboxremember"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:checked="false"
+                       android:text="Beni Hatırla"
+                       android:textSize="@dimen/textsub"
+                       android:textColor="@color/textSub"
+                       android:buttonTint="@color/textSub"
+
+                       />
+                </LinearLayout>
+                <customfonts.MyTextView
+
+                    android:id="@+id/forgotpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Şifremi Unuttum"
+                    android:textColor="@color/textSub"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/textsub"
+                    android:gravity="right"
+                    android:layout_marginRight="50dp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+            <customfonts.MyTextView
+                android:layout_above="@+id/signinline"
+                android:id="@+id/signin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect1"
+                android:text="Giriş Yap"
+                android:textSize="@dimen/text"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:padding="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="26dp"
+                android:elevation="1.5dp" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/signinline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="35dp"
+        >
+
+        <customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hesabınız Yok Mu?"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/textSub"
+            android:textSize="@dimen/textsub"
+            android:layout_marginRight="3dp"
+
+            />
+
+        <customfonts.MyTextView
+
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/textsub"
+            android:layout_marginLeft="3dp"
+
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+

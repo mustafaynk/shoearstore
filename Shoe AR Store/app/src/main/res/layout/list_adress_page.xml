@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            >
+            <customfonts.MyTextView
+                android:id="@+id/title"
+                android:maxLines="1"
+                android:textSize="@dimen/textlist"
+                android:textStyle="bold"
+                android:text="Title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"/>
+
+            <customfonts.MyTextView
+                android:id="@+id/icerik"
+                android:maxLines="4"
+                android:textSize="@dimen/menu_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Adres İçerik"
+                android:textColor="@color/Tex"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="right"
+                android:weightSum="1">
+                <customfonts.MyTextView
+                    android:id="@+id/delete"
+                    android:textSize="@dimen/menu_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/red"
+                    android:background="@android:drawable/ic_menu_delete"
+                    android:layout_weight="0.5"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/icerikId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colordevider"
+        />
+
+
+
+</LinearLayout>

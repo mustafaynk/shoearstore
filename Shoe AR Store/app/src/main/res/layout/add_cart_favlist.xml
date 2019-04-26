@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_kabartma">
+<customfonts.MyTextView
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Ürünü Sepete Ekle"
+    android:textStyle="bold"
+    android:gravity="center_horizontal"
+    android:textSize="@dimen/spacing"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:weightSum="1">
+    <customfonts.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:textSize="@dimen/menu_text"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="Numarayı Seçiniz: "/>
+    <Spinner
+        android:id="@+id/numaralar"
+        android:layout_weight="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/spinner_style"
+        android:spinnerMode="dialog"/>
+</LinearLayout>
+
+    <Button
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/sepetekle"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/discountbg"
+        android:text="Sepete Ekle"
+        />
+</LinearLayout>

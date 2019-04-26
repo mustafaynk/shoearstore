@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@drawable/layout_kabartma"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/orderStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="16dp"
+                android:textColor="@color/boticoncolor"
+                android:gravity="left"
+                android:layout_weight="0.4"/>
+            <TextView
+                android:id="@+id/orderPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="16dp"
+                android:textColor="@color/bottombarback"
+                android:gravity="right"
+                android:layout_weight="0.6"/>
+        </LinearLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/orderImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+
+                />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            >
+
+            <customfonts.MyTextView
+                android:layout_marginBottom="5dp"
+                android:textAllCaps="true"
+                android:id="@+id/orderNumber"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Number 200"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/cardview_dark_background"
+                />
+            <customfonts.MyTextView
+                android:id="@+id/orderDate"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Orders Date"
+                android:textSize="15dp"
+                android:textColor="@color/cardview_dark_background"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.widget.Space
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</LinearLayout>

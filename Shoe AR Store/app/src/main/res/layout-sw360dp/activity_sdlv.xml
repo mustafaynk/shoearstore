@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textfav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/favNotItemText"
+        android:textColor="@color/bottombarback"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/fav2"
+        android:gravity="center"
+        android:drawableRight="@drawable/fav2"
+        android:visibility="gone"
+        />
+
+    <favoritespage.items.SlideAndDragListView
+        android:id="@+id/lv_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@android:color/black"
+        android:dividerHeight="0.5dip"
+        android:listSelector="@drawable/toolbarbg"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip">
+    </favoritespage.items.SlideAndDragListView>
+
+</RelativeLayout>

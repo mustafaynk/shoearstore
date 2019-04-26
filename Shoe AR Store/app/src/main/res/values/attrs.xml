@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StickyScrollView">
+        <attr name="stuckShadowHeight" format="dimension" />
+        <attr name="stuckShadowDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="LoadingView">
+        <attr name="loading_renderer">
+            <enum name="DanceLoadingRenderer" value="6"/>
+    </attr>
+    </declare-styleable>
+
+</resources>
+

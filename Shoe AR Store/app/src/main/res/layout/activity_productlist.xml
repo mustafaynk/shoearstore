@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    tools:context=".ProductListActivity">
+
+    <include
+        layout="@layout/toolbarproductlist"
+        android:id="@+id/toolbar"
+        ></include>
+
+
+    <!--********story by and refine*********-->
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbarbg"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <Spinner
+            android:id="@+id/sirala"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIRALA"
+            android:drawableLeft="@drawable/arrowupdown"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/Tex"/>
+
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/colordevider"/>
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FİLTRELE"
+            android:drawableLeft="@drawable/refine"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/Tex"
+            />
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colordevider"/>
+
+        <ImageView
+            android:id="@+id/gridviewicon"
+            android:visibility="visible"
+            android:layout_marginRight="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gridviewicon"/>
+        <ImageView
+            android:id="@+id/listviewicon"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/listviewicon"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="103dp"
+        android:scrollbars="none"
+        >
+
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.shoeARstore.ExpandableHeightGridView
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:verticalSpacing="5dp"
+                android:stretchMode="columnWidth"
+                android:numColumns="2"
+                android:layout_margin="5dp"
+                android:isScrollContainer="false"
+                android:horizontalSpacing="5dp"
+                android:id="@+id/gridview"
+                android:background="#f2f3f4" />
+
+
+            <com.shoeARstore.ExpandableHeightListView
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f3f4"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

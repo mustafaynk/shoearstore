@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/layout_kabartma"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/image"
+        android:src="@drawable/bag1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <customfonts.MyTextView
+            android:id="@+id/categoryid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@drawable/maincategorybackground">
+            <customfonts.MyTextView
+                android:id="@+id/categoryname"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/text"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CategoryName"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="siralaitemproduct">
+        <item>SIRALA</item>
+        <item>Çok Satanlar</item>
+        <item>Fiyata Göre Azalan</item>
+        <item>Fiyata Göre Artan</item>
+        <item>En Yeniler</item>
+        <item>Yorum Sayısı</item>
+    </string-array>
+    <string-array name="siraliitemcomment">
+        <item>SIRALA</item>
+        <item>Değerlendirmeye Göre</item>
+        <item>Tarihe Göre</item>
+    </string-array>
+    <string-array name="ulkeler">
+        <item>Türkiye</item>
+        <item>Azerbaycan</item>
+        <item>Özbekistan</item>
+    </string-array>
+    <string-array name="iller">
+        <item>İstanbul</item>
+        <item>Ankara</item>
+        <item>İzmir</item>
+        <item>Adana</item>
+        <item>Adıyaman</item>
+        <item>Afyonkarahisar</item>
+        <item>Ağrı</item>
+        <item>Aksaray</item>
+        <item>Amasya</item>
+        <item>Antalya</item>
+        <item>Ardahan</item>
+        <item>Artvin</item>
+        <item>Aydın</item>
+        <item>Balıkesir</item>
+        <item>Bartın</item>
+        <item>Batman</item>
+        <item>Bayburt</item>
+        <item>Bilecik</item>
+        <item>Bingöl</item>
+        <item>Bitlis</item>
+        <item>Bolu</item>
+        <item>Burdur</item>
+        <item>Bursa</item>
+        <item>Çanakkale</item>
+        <item>Çankırı</item>
+        <item>Çorum</item>
+        <item>Denizli</item>
+        <item>Diyarbakır</item>
+        <item>Düzce</item>
+        <item>Edirne</item>
+        <item>Elazığ</item>
+        <item>Erzincan</item>
+        <item>Erzurum</item>
+        <item>Eskişehir</item>
+        <item>Gaziantep</item>
+        <item>Giresun</item>
+        <item>Gümüşhane</item>
+        <item>Hakkari</item>
+        <item>Hatay</item>
+        <item>Iğdır</item>
+        <item>Isparta</item>
+        <item>Kahramanmaraş</item>
+        <item>Karabük</item>
+        <item>Karaman</item>
+        <item>Kars</item>
+        <item>Kastamonu</item>
+        <item>Kayseri</item>
+        <item>Kırıkkale</item>
+        <item>Kırklareli</item>
+        <item>Kırşehir</item>
+        <item>Kilis</item>
+        <item>Kocaeli</item>
+        <item>Konya</item>
+        <item>Kütahya</item>
+        <item>Malatya</item>
+        <item>Manisa</item>
+        <item>Mardin</item>
+        <item>Mersin</item>
+        <item>Muğla</item>
+        <item>Muş</item>
+        <item>Nevşehir</item>
+        <item>Niğde</item>
+        <item>Ordu</item>
+        <item>Osmaniye</item>
+        <item>Rize</item>
+        <item>Sakarya</item>
+        <item>Samsun</item>
+        <item>Siirt</item>
+        <item>Sinop</item>
+        <item>Sivas</item>
+        <item>Şırnak</item>
+        <item>Tekirdağ</item>
+        <item>Tokat</item>
+        <item>Trabzon</item>
+        <item>Tunceli</item>
+        <item>Şanlıurfa</item>
+        <item>Uşak</item>
+        <item>Van</item>
+        <item>Yalova</item>
+        <item>Yozgat</item>
+        <item>Zonguldak</item>
+    </string-array>
+</resources>

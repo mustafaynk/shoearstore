@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/bg3"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/imagelogo2"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/logoheader" />
+
+
+    <customfonts.MyTextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="left"
+        android:textStyle="italic|bold"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.0"
+        android:text="Türkiye'nin İlk AR Teknolojili Mağaza Uygulamasına Hoşgeldiniz..."
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        android:layout_marginBottom="155dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="adresspage.MemberAdressActivity"
+    android:background="#f4f4f4"
+    >
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+<include layout="@layout/toolbarreview"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+       >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <customfonts.MyTextView
+            android:id="@+id/textTitle"
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yeni Adres Ekle"
+            android:textColor="@color/Tex"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/layout_kabartma">
+
+
+                <customfonts.MyEditText
+                    android:id="@+id/firstname"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:hint="Ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/Tex"
+                    android:background="@drawable/edittext_border"
+                    android:maxLines="1"
+                    android:textSize="@dimen/spacing"/>
+
+
+
+                <customfonts.MyEditText
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/lastname"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/Tex"
+                    android:background="@drawable/edittext_border"
+                    android:maxLines="1"
+                    android:hint="Soyad"
+                    android:textSize="@dimen/spacing"/>
+            <customfonts.MyEditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/phone"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Tex"
+                android:background="@drawable/edittext_border"
+                android:maxLines="1"
+                android:hint=" Telefon"
+                android:textSize="@dimen/spacing"
+                android:inputType="number"
+                android:maxLength="11"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/layout_kabartma">
+
+
+            <Spinner
+                android:id="@+id/spinnerCountry"
+                style="@style/spinner_style"
+                android:spinnerMode="dialog"
+                />
+            <Spinner
+                android:id="@+id/spinnerCity"
+                style="@style/spinner_style"
+                android:spinnerMode="dialog"
+                />
+            <Spinner
+                android:id="@+id/spinnerDistrict"
+                style="@style/spinner_style"
+                android:spinnerMode="dialog"
+                />
+
+            <customfonts.MyEditText
+                android:id="@+id/openAdressLine"
+                android:layout_height="70dp"
+                android:textSize="15dp"
+                android:gravity="left|start"
+                android:textColor="@color/Tex"
+                style="@style/edittextBorderStyle"
+                android:hint="@string/openAdressText"/>
+            <customfonts.MyEditText
+                android:id="@+id/adressName"
+                android:layout_height="40dp"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:hint="@string/adressNameText"
+                style="@style/edittextBorderStyle"
+                android:maxLength="30"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutFatura"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/layout_kabartma"
+            android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/radioFaturaTip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:text="Bireysel"
+                        android:checked="true"
+                        android:id="@+id/radioFaturaBireysel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"/>
+                    <RadioButton
+                        android:id="@+id/radioFaturaKurumsal"
+                        android:text="Kurumsal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"/>
+                </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layoutFaturaKurumsal"
+            android:visibility="gone">
+            <customfonts.MyEditText
+                android:id="@+id/companyname"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:hint="Firma Adı"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Tex"
+                android:background="@drawable/edittext_border"
+                android:maxLines="1"
+                android:textSize="@dimen/spacing"/>
+            <customfonts.MyEditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/companytaxname"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Tex"
+                android:background="@drawable/edittext_border"
+                android:maxLines="1"
+                android:hint="Vergi Dairesi"
+                android:textSize="@dimen/spacing"/>
+            <customfonts.MyEditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/companytaxnumber"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Tex"
+                android:background="@drawable/edittext_border"
+                android:maxLines="1"
+                android:hint="Vergi Numarası"
+                android:textSize="@dimen/spacing"
+                android:inputType="number"
+                android:maxLength="11"
+                />
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/save"
+            android:padding="10dp"
+            android:background="@drawable/layout_kabartma"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            >
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adresi Kaydet"
+                android:textColor="@color/White"
+                android:textSize="@dimen/spacing"
+                android:background="@drawable/oneside_roundrect"
+                android:paddingLeft="45dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="45dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

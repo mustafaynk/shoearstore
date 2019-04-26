@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text">15dp</dimen>
+    <dimen name="textsub">14dp</dimen>
+    <dimen name="textlist">16dp</dimen>
+    <dimen name="spacing">19dp</dimen>
+
+
+    <!--
+        Navigation Drawer dimens
+        -->
+    <!--  menu text size-->
+    <dimen name="menu_text">15dp</dimen>
+
+    <!--  menu text pading-->
+    <dimen name="menu_textpading">12dp</dimen>
+
+    <!--  menu layout pading-->
+    <dimen name="menu_layoutpading">16dp</dimen>
+
+    <!--  menu layout topmargin-->
+    <dimen name="menu_layouttopmargin">10dp</dimen>
+
+
+    <!--  menu  cat img topmargin-->
+    <dimen name="menucat_imgtopmargin">11dp</dimen>
+</resources>

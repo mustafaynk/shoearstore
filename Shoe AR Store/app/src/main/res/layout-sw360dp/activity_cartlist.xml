@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/totalPriceStatus">
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:background="@color/White"
+            />
+
+        <customfonts.MyTextView
+            android:id="@+id/sepetbos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:drawableTint="@color/red"
+            android:drawableLeft="@drawable/bag1"
+            android:drawableRight="@drawable/bag1"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Sepetinizde Ürün Yok!!!"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </FrameLayout>
+    <LinearLayout
+        android:background="#ececec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/totalPriceStatus"
+        android:layout_above="@+id/pay"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textSize="16dp"
+                android:text="Ürünler Toplamı(KDV Dahil):"/>
+            <TextView
+                android:gravity="right"
+                android:id="@+id/totalpricewithkdv"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textSize="16dp"
+                android:text="Kargo Bedeli:"/>
+            <TextView
+                android:gravity="right"
+                android:id="@+id/cargoprice"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:gravity="right"
+                android:textSize="16dp"
+                android:textColor="@color/boticoncolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="TOPLAM:"/>
+            <TextView
+                android:textColor="@color/boticoncolor"
+                android:gravity="right"
+                android:id="@+id/totalPrice"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"/>
+        </LinearLayout>
+    </LinearLayout>
+    <customfonts.MyTextView
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:text="ÖDEME YAP"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:drawableTint="#ffffff"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Shoe AR Store</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="signup"><b><u>Kayıt Ol</u></b></string>
+    <string name="signin"><u><b>Giriş Yap</b></u></string>
+    <string name="tandc"><u>Kullanıcı Sözleşmesini </u></string>
+    <string name="title_activity_find_store">ShoeARStoreMap</string>
+    <string name="welcometext">HOŞGELDİNİZ \n%1$s</string>
+    <string name="cameraMessage">Lütfen Kamerayı QR Code üzerine yaklaştırın...</string>
+    <string name="giristext">Giriş Yap veya Kayıt Ol</string>
+    <string name="adresstext"><b>%1$s adet %2$s adresiniz bulunmaktadır.</b> Bu sayfadan yeni adres oluşturabilir, mevcut adresinizi düzenleyebilir veya silebilirsiniz.
+                                \nBu sayfada yapacağınız adres değişiklikleri, daha önce yaptığınız siparişleri etkilemez.</string>
+    <string name="adressaddtext"><center>[+]\n\nYeni %1$s Adresi Ekle</center></string>
+    <string name="adressAdd"><center>%1$s Adresi</center></string>
+    <string name="favNotMemberText">Lütfen Giriş Yapınız!!!</string>
+    <string name="favNotItemText">Favori Listenizde Ürün Yok!!!</string>
+    <string name="openAdressText">Mahalle ,sokak, cadde ve diğer adres bilgilerinizi giriniz</string>
+    <string name="adressNameText">Adres adı giriniz. Örneğin; Evim, İşyeri gibi</string>
+    <string name="postCodeText">Posta Kodu</string>
+    <string name="commentText">Yorumunuzu Yazınız...</string>
+    <string name="commentRule"><b> > </b>Yorumlarınız yayınlanmadan önce ilgili editörlerimiz tarafından kontrol edildikten sonra yorumunuz yayınlanmaktadır.\n
+                               <b> > </b>Yorumunuzun yayınlanma süresi 7 iş günüdür.\n
+                               <b> > </b>Yorumlarınızda hakaret, küfür veya kötü söz bulunması durumunda yorumunuz yayınlanmayacaktır.</string>
+</resources>

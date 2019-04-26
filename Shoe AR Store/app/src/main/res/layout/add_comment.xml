@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4">
+    <include layout="@layout/toolbarreview" android:id="@+id/toolbar"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/layout_kabartma">
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yorumunuz"
+                android:textSize="20dp"
+                android:textColor="@color/Tex"
+                />
+            <customfonts.MyEditText
+                android:id="@+id/comment"
+                android:layout_height="70dp"
+                android:textSize="15dp"
+                android:gravity="left|start"
+                android:textColor="@color/Tex"
+                style="@style/edittextBorderStyle"
+                android:hint="@string/commentText"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/layout_kabartma">
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ürün Değerlendirmeniz"
+                android:textSize="20dp"
+                android:textColor="@color/Tex"
+                />
+            <RatingBar
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/commentRating"
+                style="?android:attr/ratingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="@string/commentRule"/>
+        <LinearLayout
+            android:id="@+id/save"
+            android:padding="10dp"
+            android:background="@drawable/layout_kabartma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            >
+
+            <customfonts.MyTextView
+                android:id="@+id/saveComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yorumu Gönder"
+                android:textColor="@color/White"
+                android:textSize="@dimen/spacing"
+                android:background="@drawable/oneside_roundrect"
+                android:paddingLeft="45dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="45dp"
+                android:gravity="center|bottom"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

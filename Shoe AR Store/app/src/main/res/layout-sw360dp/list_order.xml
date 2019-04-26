@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rect"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+       >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        >
+
+      <LinearLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <ImageView
+              android:id="@+id/deliverypackage"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/deliverypackage"
+              android:layout_gravity="center"
+              />
+
+          <customfonts.MyTextView
+              android:id="@+id/orderpalced"
+              android:layout_marginLeft="16dp"
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Sipariş Tarihi"
+              android:textColor="@color/textSub"
+              android:textSize="14dp"
+              android:layout_gravity="center"
+              />
+
+          <customfonts.MyTextView
+              android:id="@+id/orderday"
+              android:layout_weight="0.7"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="2 gün önce"
+              android:textColor="@color/textSub"
+              android:textSize="14dp"
+              android:layout_gravity="center"
+              />
+
+          <ImageView
+              android:id="@+id/more"
+              android:visibility="visible"
+              android:layout_width="15dp"
+              android:layout_height="22dp"
+              android:src="@drawable/more"
+              android:layout_gravity="center"
+              />
+      </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+
+            <customfonts.MyTextView
+                android:id="@+id/orderid"
+                android:layout_marginLeft="38dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sipariş Id"
+                android:textColor="@color/textSub"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+
+                />
+
+            <customfonts.MyTextView
+                android:id="@+id/idnumber"
+                android:layout_weight="0.7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="987876543"
+                android:textColor="@color/textSub"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp"
+        >
+
+        <customfonts.MyTextView
+            android:id="@+id/ordername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vanvera Black High Heels"
+            android:lines="2"
+            android:textSize="@dimen/text"
+            android:textColor="@color/Tex"
+            android:lineSpacingExtra="3dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+           <customfonts.MyTextView
+               android:id="@+id/qt1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Adet :"
+               android:textSize="@dimen/textsub"
+               android:textColor="@color/textSub"
+               />
+
+
+            <customfonts.MyTextView
+                android:id="@+id/qt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="@dimen/textsub"
+                android:textColor="@color/textSub"
+                android:layout_marginLeft="6dp"
+                />
+            <customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adet"
+                android:textSize="@dimen/textsub"
+                android:textColor="@color/textSub"
+                android:layout_marginLeft="6dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <customfonts.MyTextView
+                android:id="@+id/estdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tahmini Teslim Tarihi"
+                android:textSize="@dimen/textsub"
+                android:textColor="@color/textSub"
+                />
+
+
+            <customfonts.MyTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23-04-17"
+                android:textSize="@dimen/textsub"
+                android:textColor="@color/red"
+                android:layout_marginLeft="6dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="2.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:id="@+id/image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/colordevider"></View>
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+
+        >
+
+        <ImageView
+           android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/radiogreen"
+            android:layout_gravity="center"
+            />
+
+        <ProgressBar
+            android:layout_weight="0.5"
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="75"
+            android:secondaryProgressTint="@color/green"
+            android:progressTint="@color/green"
+            />
+
+
+        <ImageView
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/radioblack"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/radio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/radiogreen"
+        android:layout_gravity="center"
+        />
+</FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        >
+
+        <customfonts.MyTextView
+            android:id="@+id/placed"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hazırlanıyor"
+            android:textSize="@dimen/textsub"
+            android:textColor="@color/green"
+            />
+        <customfonts.MyTextView
+            android:id="@+id/shipped"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Taşıma Durumu"
+            android:textSize="@dimen/textsub"
+            android:textColor="@color/green"
+            android:gravity="center"
+            />
+        <customfonts.MyTextView
+            android:id="@+id/delivered"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teslim Edildi"
+            android:textSize="@dimen/textsub"
+            android:textColor="@color/textSub"
+            android:gravity="right"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+Bu PHP dosyalarý Android platformunda verilerin kullanýcýya gösterilmesini(örnek olarak ürünlerin listelenmesi) saðlamak amacýyla veritabanýndan verilerin çekilmesi iþlemlerini gerçekleþtirir.

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <customfonts.MyEditText
+        android:id="@+id/forgotpassmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:drawableTint="@color/White"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="17dp"
+        android:gravity="left"
+        android:hint="Mail Adresinizi Giriniz..."
+        android:lines="1"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        android:textColor="@color/White"
+        android:textColorHint="@color/White"
+        android:textSize="@dimen/text" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_height="1dp"
+        android:background="@color/White"/>
+</LinearLayout>
+    <customfonts.MyTextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/forgotpasssend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect1"
+        android:text="Gönder"
+        android:textSize="@dimen/text"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:padding="12dp"
+        android:layout_marginBottom="26dp"
+        android:elevation="1.5dp" />
+</LinearLayout>

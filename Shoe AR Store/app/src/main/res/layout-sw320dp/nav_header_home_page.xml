@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@color/cattextcolour">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/droverbackground">
+
+
+        <com.alexzh.circleimageview.CircleImageView
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/fav"
+            app:view_shadowRadius="1dp"
+            android:layout_gravity="center"
+            app:view_shadowDx="1dp"
+            app:view_shadowDy="0dp"
+            app:view_borderWidth="0dp"
+            app:view_borderColor="#cccccc"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:textColor="@color/cattextcolour"
+            android:textSize="15dp"
+            android:text="@string/giristext"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/myproducts1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/settingsmenu"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="horizontal"
+        android:background="@color/droverbackground1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/adress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="@dimen/menucat_imgtopmargin"
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/map_markermenu"
+                    />
+                <customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adreslerim"
+                    android:textSize="@dimen/menu_textpading"
+                    android:letterSpacing="0.025"
+                    android:layout_marginTop="@dimen/menu_layouttopmargin"
+                    android:textColor="@color/cattextcolour"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"/>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/siparisler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="@dimen/menucat_imgtopmargin"
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/boxmenu"
+                    />
+                <customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Siparişlerim"
+                    android:letterSpacing="0.025"
+                    android:textSize="@dimen/menu_textpading"
+                    android:textColor="@color/cattextcolour"
+                    android:layout_marginTop="@dimen/menu_layouttopmargin"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/kartlar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="@dimen/menucat_imgtopmargin"
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/visamenu"
+                    />
+                <customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kartlarım"
+                    android:textSize="@dimen/menu_textpading"
+                    android:letterSpacing="0.025"
+                    android:textColor="@color/cattextcolour"
+                    android:layout_marginTop="@dimen/menu_layouttopmargin"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/cattextcolour">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/menu_layoutpading">
+
+            <ImageView
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/categorymenu"
+                />
+
+            <customfonts.MyTextView
+                android:id="@+id/categories"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategoriler"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/menu_layoutpading">
+
+            <ImageView
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mywalletmenu"
+                />
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cüzdanım"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/menu_layoutpading">
+
+            <ImageView
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/helpmenu"
+                />
+
+            <customfonts.MyTextView
+                android:id="@+id/helpmenu"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yardım"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/findstore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/menu_layoutpading">
+
+            <ImageView
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/magazabul"
+                />
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mağaza Bul"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/menu_layoutpading">
+
+            <ImageView
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ratemenu"
+                />
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uygulamamızı Değerlendirin"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/menu_layoutpading">
+
+            <ImageView
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logoutmenu"
+                />
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Çıkış Yap"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

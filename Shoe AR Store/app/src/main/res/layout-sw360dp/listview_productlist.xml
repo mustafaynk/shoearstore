@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:background="#fff">
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:padding="10dp"
+        >
+      <FrameLayout
+          android:layout_width="70dp"
+          android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+
+            android:layout_gravity="center"
+            /></FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <customfonts.MyTextView
+
+            android:id="@+id/title"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Canvera Black Heel"
+            android:textSize="@dimen/text"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/red"
+            android:layout_marginTop="16dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            >
+
+            <customfonts.MyTextView
+
+                android:id="@+id/price"
+                android:textSize="@dimen/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1200 Rs"
+                android:textColor="@color/Tex"
+                android:layout_gravity="center"
+                />
+
+            <customfonts.MyTextView
+
+                android:id="@+id/cutprice"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="250 Rs"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textSub"
+
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                >
+                <RatingBar
+                    android:id="@+id/ratingbar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_gravity="center"
+                    />
+
+                <customfonts.MyTextView
+                    android:id="@+id/ratingtext"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(1400)"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textSub"
+                    />
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30%"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/discountbg"
+                    />
+            </LinearLayout>
+
+        <!--<LinearLayout-->
+           <!--android:layout_weight="1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:background="@drawable/discountbg"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!---->
+            <!---->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/discount"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="30%"-->
+                <!--android:padding="2dp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="12dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:background="@drawable/discountbg"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/id"
+    android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginRight="16dp"
+        >
+        <ImageView
+
+            android:id="@+id/fav1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:background="@drawable/f0"
+            />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/fav2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/f4"
+            />
+
+
+        <!--<ImageView-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/spinning_wheel_image"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@drawable/fav6"-->
+            <!--android:layout_gravity="left"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/spinning_wheel_image2"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@drawable/fav5"-->
+            <!--android:layout_gravity="left"-->
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/fav1"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@drawable/f0"-->
+            <!--android:layout_gravity="left"-->
+            <!--/>-->
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

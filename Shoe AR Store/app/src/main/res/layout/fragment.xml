@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        ></include>
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/botbar"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bottombarback"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/home0"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/homewhite"
+                android:layout_gravity="center"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/offer0"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/offer"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/salewhite"
+                android:layout_gravity="center"
+
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fav0"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/fav"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/heartwhite"
+                android:layout_gravity="center"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/bag0"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                >
+
+                <customfonts.MyTextView
+                    android:visibility="visible"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/bagnumberbg"
+                    android:text="0"
+                    android:id="@+id/cartcount"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="3dp"
+                    />
+                <ImageView
+                    android:id="@+id/bag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/bagwhite2"
+                    android:layout_gravity="center"
+
+
+                    />
+
+            </FrameLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noti0"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/noti"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/noti"
+                android:layout_gravity="center"
+
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

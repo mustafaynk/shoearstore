@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#24deb6</color> <!-- ea495f -->
+
+
+    <color name="textSub">#76818a</color>
+    <color name="Tex">#404547</color>
+    <color name="White">#fff</color>
+
+
+    <color name="colordevider">#f1f2f4</color>
+    <color name="colorbutton">#ff5254</color>
+    <color name="iconcolour">#9ba4ab</color>
+    <color name="strok">#e4e5ea</color>
+    <color name="strok2">#d5d6da</color>
+
+
+    <color name="green">#5ccc78</color>
+    <color name="red">#ea495f</color>
+    <color name="yellow">#f8d64e</color>
+    <color name="light_green">#1bac94</color>
+
+    <color name="colortext">#100b20</color>
+    <color name="colorhint">#a9aaac</color>
+
+    <color name="iconcolor">#8b959e</color>
+    <color name="boticon">#999ba4ab</color>
+    <color name="boticoncolor">#24bdb6</color>
+
+    <color name="dene">#24deb6</color>
+
+    <color name="bottombarback">#d7007176</color>
+
+
+
+    <!--
+        Category Color
+    -->
+    <color name="categorybackcolor">#24bdb6</color>
+
+    <!--
+        Navigation Color
+            -->
+    <color name="drovercolour">#6E6E6D</color>
+    <color name="cattextcolour">#FFFFFF</color>
+    <color name="category_textcolour">#404547</color>
+    <color name="divider">#677174</color>
+    <color name="droverbackground">#29363b</color>
+    <color name="droverbackground1">#354348</color>
+
+</resources>

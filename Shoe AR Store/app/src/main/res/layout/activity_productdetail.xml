@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailActivity"
+    android:background="#f2f3f4"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarproductdetail"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+
+            <!--*********product name*********-->
+
+            <LinearLayout
+                android:id="@+id/linear1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:background="@color/White"
+
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <customfonts.MyTextView
+                        android:id="@+id/productname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ürün Ad"
+                        android:lines="3"
+                        android:textColor="@color/Tex"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="16dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="2.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    >
+                    <customfonts.MyTextView
+                        android:id="@+id/newprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="₺"
+                        android:textSize="@dimen/textlist"
+                        android:textColor="@color/White"
+                        android:background="@drawable/oneside_roundrect"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingLeft="6dp"
+                        />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/oldprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="₺"
+                        android:textSize="@dimen/text"
+                        android:textColor="@color/textSub"
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="16dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--*********image*********-->
+
+            <FrameLayout
+                android:visibility="visible"
+                android:id="@+id/image"
+                android:layout_below="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/White">
+
+                <com.shoeARstore.SliderLayout
+                    android:id="@+id/productimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    custom:pager_animation_span="1100"
+                    android:layout_gravity="center"
+                    android:src="@drawable/shoppy_logo"
+                    style="@style/AlertDialog.AppCompat.Light"
+                    >     <requestFocus />
+                </com.shoeARstore.SliderLayout>
+            </FrameLayout>
+
+
+
+
+
+            <!--*****review, rate, add to cart  *************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/image"
+                android:background="@drawable/bg_strok"
+                android:id="@+id/linear2"
+                >
+
+
+
+
+                <!--*****review, rate*************-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+
+                    android:background="@color/White"
+                    >
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <RatingBar
+                            android:id="@+id/ratingbar"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="false"
+
+                            />
+                        <customfonts.MyTextView
+                            android:id="@+id/comments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(1230)"
+                            android:textSize="@dimen/textsub"
+                            android:textColor="@color/textSub"
+                            android:layout_marginLeft="5dp"
+                            />
+                    </LinearLayout>
+
+
+                    <View
+
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colordevider"
+
+                        ></View>
+
+
+                    <LinearLayout
+                        android:id="@+id/reviews"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <customfonts.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yorum"
+                            android:textSize="@dimen/textsub"
+                            android:textColor="@color/light_green"
+                            />
+
+                        <customfonts.MyTextView
+                            android:id="@+id/yorum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(130)"
+                            android:textSize="@dimen/textsub"
+                            android:textColor="@color/textSub"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colordevider"
+                        ></View>
+
+                    <LinearLayout
+
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <customfonts.MyTextView
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Stokta Var"
+                            android:textSize="@dimen/textsub"
+                            android:textColor="@color/red"
+
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--********add to cart**********-->
+
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/White"
+                    >
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <customfonts.MyTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ürün Sayısı"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub"
+                            />
+
+                        <ImageView
+                            android:id="@+id/minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/minus"
+                            android:layout_marginLeft="16dp"
+                            android:padding="2dp"
+                            />
+
+                        <customfonts.MyTextView
+                            android:id="@+id/cartno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:inputType="number"
+                            android:textColorHint="@color/textSub"
+                            android:background="#00000000"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub"
+                            android:layout_marginLeft="16dp"
+                            />
+                        <ImageView
+                            android:id="@+id/plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/plus"
+                            android:layout_marginLeft="16dp"
+                            android:padding="2dp"
+                            /></LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linear4"
+                android:layout_below="@+id/linear2"
+                android:padding="16dp"
+                android:background="@drawable/bg_strok"
+                android:layout_marginTop="16dp"
+                >
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ürün Seçenekleri"
+                    android:textSize="20dp"
+                    android:textColor="@color/Tex"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Beden"
+                        android:textSize="@dimen/text"
+                        android:textColor="@color/Tex"
+                        android:layout_weight="0.8"
+                        />
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/productnumbers"
+                            >
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Renk"
+                        android:textSize="@dimen/text"
+                        android:textColor="@color/Tex"
+                        android:layout_weight="0.8"
+                        />
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/productcolors"
+                            >
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <!--************Item details**************-->
+
+
+            <LinearLayout
+                android:id="@+id/linear6"
+                android:layout_below="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/bg_strok"
+                android:layout_marginTop="16dp"
+                >
+
+
+
+
+                <LinearLayout
+                    android:layout_weight="0.07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ürün Özellikleri"
+                        android:textSize="@dimen/text"
+                        android:textColor="@color/Tex"
+                        />
+
+
+
+                    <customfonts.MyTextView
+                        android:id="@+id/productdetail1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ortopedik, koku ve terleme yapmayan, mikrofiber deri, günlük kullanım için uygun, dayanıklı su geçirmez 2017 sezonu, kaymaz termoplastik kauçuk tabanlı erkek trekking ayakkabı."
+                        android:drawablePadding="6dp"
+                        android:textSize="@dimen/textsub"
+                        android:textColor="@color/textSub"
+                        android:layout_marginTop="16dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <customfonts.MyTextView
+                android:id="@+id/peopviewed"
+                android:layout_below="@+id/linear6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Öneri Ürünler"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="21dp"
+                android:textSize="16dp"
+                android:textColor="@color/Tex"
+                />
+
+            <!--********RECYCLERVIEW ************-->
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/peopviewed"
+                android:id="@+id/rv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp"
+                android:elevation="5dp"
+                ></android.support.v7.widget.RecyclerView>
+
+
+            <View
+
+                android:layout_below="@+id/rv2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/strok"
+                android:id="@+id/div9"
+                android:layout_marginTop="36dp"
+
+                ></View>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <View
+
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/strok"
+        android:id="@+id/div0"
+
+
+        ></View>
+    <LinearLayout
+        android:layout_weight="2.6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        >
+        <customfonts.MyTextView
+            android:id="@+id/addtocartbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:textSize="16dp"
+            android:textColor="@color/White"
+            android:background="@drawable/oneside_roundrect"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="14dp"
+            android:paddingLeft="14dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

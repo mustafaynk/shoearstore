@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@drawable/toolbarbg"
+    android:id="@+id/toolbar"
+    android:contentInsetLeft="10dp"
+    android:contentInsetRight="10dp"
+    android:contentInsetStart="10dp"
+    app:contentInsetLeft="10dp"
+    app:contentInsetRight="10dp"
+    app:contentInsetStart="10dp"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    >
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_gravity="left"
+        android:padding="16dp"
+
+                />
+
+
+
+
+
+<customfonts.MyTextView
+   android:id="@+id/eshop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="YORUMLAR"
+    android:textColor="@color/Tex"
+    android:textSize="@dimen/text"
+    android:gravity="center"
+    android:layout_marginRight="45dp"
+
+    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</android.support.v7.widget.Toolbar>
+
+

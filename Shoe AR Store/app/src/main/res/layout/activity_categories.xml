@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ededed"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:id="@+id/kategoriadi"
+                android:textSize="20dp"
+                android:text="Tüm Ürünleri Göster"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kategoriid"/>
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/flipper">
+                <com.shoeARstore.ExpandableHeightGridView
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:verticalSpacing="5dp"
+                    android:stretchMode="columnWidth"
+                    android:numColumns="1"
+                    android:layout_margin="5dp"
+                    android:isScrollContainer="false"
+                    android:horizontalSpacing="5dp"
+                    android:id="@+id/maincategories"
+                    android:background="#f2f3f4" />
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/subcategories"/>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/subsubcategories"/>
+            </ViewFlipper>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/buttononceki"
+                    android:backgroundTint="@color/categorybackcolor"
+                    android:backgroundTintMode="src_over"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ÖNCEKİ"
+                    android:drawableTint="@android:color/black"
+                    android:drawableLeft="@drawable/back"
+                    android:drawableRight="@drawable/back"
+                    android:visibility="invisible"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
