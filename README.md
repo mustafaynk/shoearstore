@@ -1,6 +1,6 @@
 # Shoe AR Store
 
-Shoe AR Store is an E-Commerce Android App.(Graduate Project)
+Shoe AR Store is an E-Commerce Android App.
 
  UI
  ----
