@@ -1,16 +1,16 @@
 # Shoe AR Store
 
-Shoe AR Store is an E-Commerce Android App.(Graduate Project)
+Shoe AR Store is an E-Commerce Android App.
 
  UI
  ----
- 
- >Login Page
+  
+ >Login Page 
  ----
 <p align="center">
   <img width="50%" src="https://github.com/mustafaynk/shoearstore/blob/master/photos/login-page.png?raw=true">
 </p>
- 
+
  >Dashboard
  ----
  <p align="center">
